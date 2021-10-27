@@ -54,4 +54,11 @@ for(let i = 0 ; i < imageCollection.length ; i++){
           <p>${textCollection[i]}</p>
       </div>
     </div> `;
+
+    thumbsCont.innerHTML += `
+    <div class="thumb active">
+         <img src="${imageCollection[i]}" alt="${titleCollection[i]}">
+     </div>`
+
+
 }
