@@ -82,8 +82,25 @@ next.addEventListener('click', function(){
     document.querySelector('.image-container.active').classList.remove('active');
 
     document.getElementsByClassName('image-container')[ImgActive].classList.add('active');
+});
 
 
+//bottoni
+let prev = document.querySelector('.prev');
+
+//creo evento click
+prev.addEventListener('click', function(){
+
+    ImgActive--;
+
+    if (ImgActive < 0 ) {
+
+        ImgActive = imageCollection.length - 1;
+    };
+
+    document.querySelector('.image-container.active').classList.remove('active');
+
+    document.getElementsByClassName('image-container')[ImgActive].classList.add('active');
 });
 
 
