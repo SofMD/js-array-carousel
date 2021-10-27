@@ -45,7 +45,6 @@ const imagesCont = document.querySelector('.images');
 const thumbsCont = document.querySelector('.thumbs');
 
 
-
 //inserire nel dom l'immagine e scritte
 for(let i = 0 ; i < imageCollection.length ; i++){
     imagesCont.innerHTML += `
@@ -65,4 +64,16 @@ for(let i = 0 ; i < imageCollection.length ; i++){
 
 
 //aggiungere classe active
-document.getElementsByClassName('image-container')[1].classList.add('active');
+document.getElementsByClassName('image-container')[0].classList.add('active');
+document.getElementsByClassName('thumbs')[0].classList.add('active');
+
+
+//bottoni
+let next = document.querySelector('.next');
+let active = 0;
+
+//creo evento click
+next.addEventListener('click', function(){
+    active++;
+    console.log(active)
+});
