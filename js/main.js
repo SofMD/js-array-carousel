@@ -45,5 +45,12 @@ const imagesCont = document.querySelector('.images');
 const thumbsCont = document.querySelector('.thumbs');
 
 for(let i = 0 ; i < imageCollection.length ; i++){
-  
+    imagesCont.innerHTML += `
+    <div class="image-container">
+      <img src="./img/01.jpg" alt="Lorem">
+      <div class="text">
+          <h3>Lorem</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo repellat laborum provident magnam ducimus dolore enim.</p>
+      </div>
+    </div> `;
 }
