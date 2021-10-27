@@ -44,6 +44,8 @@ const textCollection = [
 const imagesCont = document.querySelector('.images');
 const thumbsCont = document.querySelector('.thumbs');
 
+
+
 //inserire nel dom l'immagine e scritte
 for(let i = 0 ; i < imageCollection.length ; i++){
     imagesCont.innerHTML += `
@@ -56,9 +58,11 @@ for(let i = 0 ; i < imageCollection.length ; i++){
     </div> `;
 
     thumbsCont.innerHTML += `
-    <div class="thumb active">
+    <div class="thumb">
          <img src="${imageCollection[i]}" alt="${titleCollection[i]}">
-     </div>`
-
-
+     </div>`;
 }
+
+
+//aggiungere classe active
+document.getElementsByClassName('image-container')[1].classList.add('active');
