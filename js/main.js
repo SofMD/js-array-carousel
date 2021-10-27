@@ -41,3 +41,9 @@ const textCollection = [
 ];
 
 
+const imagesCont = document.querySelector('.images');
+const thumbsCont = document.querySelector('.thumbs');
+
+for(let i = 0 ; i < imageCollection.length ; i++){
+  
+}
